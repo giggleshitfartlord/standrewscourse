@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Support Old Course Caddie{% endblock %}
+
+{% block head %}
+<script src="https://js.stripe.com/v3/"></script>
+{% endblock %}
+
+{% block content %}
+<div class="hero text-center">
+    <h1>Support Old Course Caddie</h1>
+    <p class="lead">Help keep this resource free for everyone</p>
+</div>
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="strategy-section">            <h2>Support If You'd Like</h2>
+            <p>If you've found this guide helpful and would like to show your appreciation, consider treating me to a coffee and snack! While completely voluntary, your kindness helps maintain this free resource for golfers everywhere.</p>
+            
+            <div class="text-center mt-4">
+                {% if stripe_public_key %}
+                    <form action="{{ url_for('create_checkout_session') }}" method="POST">                        <button type="submit" class="btn btn-primary btn-lg">
+                            Donate $8 - Buy me a coffee & snack! ☕️🍪
+                        </button>
+                    </form>
+                {% else %}
+                    <div class="alert alert-warning">
+                        Donations are temporarily unavailable. Please check back later.
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="historical-fact mt-4">
+            <h2>Why Support?</h2>
+            <p>Old Course Caddie is a free resource created to help golfers prepare for their round at the Home of Golf. 
+            Your support helps cover hosting costs and enables continued improvements to the site.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

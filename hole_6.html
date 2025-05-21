@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 6 - Heathery Out - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 6 - "Heathery Out"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole6.webp') }}" alt="Hole 6 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 412 yards</li>
+                    <li>Stroke Index: 12</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>Named for the heather that once grew abundantly here, this hole features one of the most challenging 
+                tee shots on the front nine. The Coffins bunkers lurk on the left side of the fairway, while Heathery 
+                bunker guards the right side of the green.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Thread your tee shot between the Coffins and the right rough</li>
+                    <li>Right side of fairway provides best angle to most pin positions</li>
+                    <li>Watch for players coming down the 12th fairway</li>
+                    <li>Consider the wind's effect on your approach - the green is exposed</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Coffins bunkers earned their name from their rectangular shape and their ability to effectively 
+                'bury' a player's chances in a tournament. The heather that gave the hole its name was gradually 
+                replaced by traditional links grasses over centuries of play.</p>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Coffins bunkers (left)</li>
+                    <li>Heathery bunker (right of green)</li>
+                    <li>Cap bunker (short right)</li>
+                    <li>Shared fairway with 12th hole</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>This green is shared with the 12th hole and features subtle breaks throughout. A gentle slope from 
+                back to front makes putting from above the hole particularly challenging. The green's firm surface 
+                often requires a running approach shot.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

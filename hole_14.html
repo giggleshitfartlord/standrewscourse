@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 14 - Long - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 14 - "Long"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole14.webp') }}" alt="Hole 14 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 5</li>
+                    <li>Length: 618 yards</li>
+                    <li>Stroke Index: 3</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>Aptly named "Long," this is one of the most challenging par 5s in championship golf. The hole 
+                features the infamous Hell Bunker on the second shot, and the approach must navigate the Beardies 
+                bunkers. A true three-shot hole for most players.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Drive must avoid Beardies bunkers on the right</li>
+                    <li>Hell Bunker comes into play on second shot</li>
+                    <li>Laying up short of Hell Bunker often wise</li>
+                    <li>Green is well-protected - accuracy essential</li>
+                    <li>Conservative play recommended in championship conditions</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>Hell Bunker gained its fearsome reputation during the 1933 Open Championship when José Jurado 
+                took four shots to escape. Even modern champions have fallen victim to its depths, including Jack 
+                Nicklaus who took three shots to get out during the 1995 Open.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 17 - Road - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 17 - "Road Hole"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole17.webp') }}" alt="Hole 17 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 495 yards</li>
+                    <li>Stroke Index: 1</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The Road Hole is arguably the most famous par 4 in golf. The blind tee shot over the Old Course Hotel 
+                leads to a narrow fairway, with the infamous Road Hole Bunker guarding the front left of the green and 
+                the stone wall and road lurking behind.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Aim over the "O" in "Hotel" on the shed for the ideal line</li>
+                    <li>The further right the tee shot, the better angle for approach</li>
+                    <li>Avoid the Road Hole Bunker at all costs</li>
+                    <li>Better to miss long than short-left</li>
+                    <li>Consider laying up if out of position</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Road Hole has been the scene of many dramatic moments in golf history, including Tom Watson's 
+                costly bogey in 1984 and Costantino Rocca's bunker struggles in 1995. The Road Hole Bunker is so 
+                deep and penal it's been nicknamed "The Sands of Nakajima" after Tommy Nakajima's struggles there 
+                in the 1978 Open.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Road Hole Bunker (front-left of green)</li>
+                    <li>The Road (behind green)</li>
+                    <li>Stone wall</li>
+                    <li>Out of bounds (right)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Green Reading</h3>
+                <p>The green slopes significantly from front-right to back-left, making approach shots from the right 
+                side of the fairway particularly challenging. The surface is relatively small and firm, with the road 
+                and wall influencing strategy on nearly every pin position.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

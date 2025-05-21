@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 3 - Cartgate - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 3 - "Cartgate"</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole3.webp') }}" alt="Hole 3 Map" class="hole-map img-fluid">
+            </div>
+        </div>        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 397 yards</li>
+                    <li>Stroke Index: 15</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>Cartgate presents a challenging dogleg right that demands accuracy off the tee. The hole features 
+                the Cartgate bunkers on the right side of the fairway and a well-protected green complex that tests 
+                both strategy and skill.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>A drawn tee shot from right to left is ideal</li>
+                    <li>Avoid the Cartgate bunkers at all costs</li>
+                    <li>The green is shared with the 15th hole</li>
+                    <li>Consider the wind direction for your approach</li>
+                    <li>Front pin positions are particularly challenging</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The name "Cartgate" comes from the path that once allowed carts to access the beach for collecting 
+                seaweed, which was used to fertilize the links land. The hole has remained largely unchanged since the 
+                early days of golf at St Andrews.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Cartgate bunkers (right side)</li>
+                    <li>Deep greenside bunkers</li>
+                    <li>Shared double green</li>
+                    <li>Out of bounds (right)</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The large double green shared with the 15th hole features subtle contours throughout. A ridge running 
+                through the middle of the green creates distinct sections, making distance control crucial. The surface 
+                tends to be firmer near the front, making running approaches a viable option.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

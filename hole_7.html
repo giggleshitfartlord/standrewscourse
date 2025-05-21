@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 7 - High (Out) - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 7 - "High (Out)"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole7.webp') }}" alt="Hole 7 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 371 yards</li>
+                    <li>Stroke Index: 10</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>A classic risk-reward par 4 that tempts players to challenge the Shell bunkers off the tee. 
+                The hole plays to an elevated green complex that's shared with the 11th hole, making precise 
+                distance control essential.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Conservative play left of Shell bunkers is safest</li>
+                    <li>Aggressive line over bunkers possible with favorable wind</li>
+                    <li>Approach shot must account for elevated green</li>
+                    <li>Short is better than long on approach</li>
+                    <li>Consider using the bank short-right of green</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Shell bunkers were named for the numerous seashells found when they were originally excavated, 
+                a reminder that the Old Course was once beneath the sea. These bunkers have influenced strategy here 
+                since golf was first played at St Andrews.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Shell bunkers (center-right)</li>
+                    <li>Hill bunker (left)</li>
+                    <li>Elevated green complex</li>
+                    <li>Deep greenside bunkers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hole-card">
+                <h3>Green Reading</h3>
+                <p>The elevated double green features significant undulations and a pronounced tier that separates the 
+                7th and 11th hole pin positions. The surface is particularly firm, making it difficult to hold approach 
+                shots, especially in dry conditions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

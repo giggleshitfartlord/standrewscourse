@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 18 - Tom Morris - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 18 - "Tom Morris"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole18.webp') }}" alt="Hole 18 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 357 yards</li>
+                    <li>Stroke Index: 16</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The finishing hole at St Andrews is one of golf's most memorable closing holes. Named after Old Tom Morris, 
+                this short par 4 features the famous Valley of Sin in front of the green and the iconic R&A clubhouse backdrop. 
+                The Swilcan Bridge crossing provides one of golf's most photographed locations.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Tee shot should avoid the right-side bunkers</li>
+                    <li>Consider laying back from the Valley of Sin</li>
+                    <li>The green is enormous - check pin position carefully</li>
+                    <li>Don't forget your photo on the Swilcan Bridge!</li>
+                    <li>Shared fairway with the 1st hole - watch for players teeing off</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The 18th has witnessed countless historic moments, including Jack Nicklaus' farewell to professional golf 
+                in 2005 and Arnold Palmer's emotional goodbye in 1995. The Valley of Sin has played a crucial role in many 
+                championships, most notably Costantino Rocca's incredible putt in the 1995 Open Championship.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

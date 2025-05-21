@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 8 - Short - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 8 - "Short"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole8.webp') }}" alt="Hole 8 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 3</li>
+                    <li>Length: 175 yards</li>
+                    <li>Stroke Index: 18</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The first par 3 on the course appears straightforward but can be treacherous in windy conditions. 
+                The green is protected by three deep pot bunkers, including the famous Short Hole bunker, which has 
+                ruined many scorecards over the centuries.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Take plenty of club - the hole often plays longer than yardage</li>
+                    <li>Short Hole bunker must be avoided at all costs</li>
+                    <li>Use the right-to-left slope to access tough pin positions</li>
+                    <li>Factor in the ever-present wind off the Eden Estuary</li>
+                    <li>Missing long is better than short</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The 8th hole, while the shortest on the course, has been the scene of many dramatic moments in 
+                championship play. The Short Hole bunker has been in play since the earliest days of golf at St Andrews 
+                and remains one of the course's most feared hazards.</p>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Short Hole bunker (front)</li>
+                    <li>Two deep pot bunkers (left and right)</li>
+                    <li>Collection area behind green</li>
+                    <li>Prevailing crosswind</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The green slopes generally from right to left with a subtle ridge running through its center. The 
+                surface is relatively small for the Old Course but features typical subtle breaks. Back pin positions 
+                can be particularly challenging due to the collection area behind.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

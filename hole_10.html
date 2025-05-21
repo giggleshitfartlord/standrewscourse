@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 10 - Bobby Jones - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 10 - "Bobby Jones"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole10.webp') }}" alt="Hole 10 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 386 yards</li>
+                    <li>Stroke Index: 8</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>Named in honor of the legendary Bobby Jones, who won the Grand Slam in 1930, this hole marks the 
+                beginning of the inward nine. A strategic par 4 that demands accuracy off the tee to set up the 
+                approach to a well-protected green.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Aim left of Kruger bunkers for ideal approach angle</li>
+                    <li>Bobby Jones bunker must be avoided on second shot</li>
+                    <li>Green slopes severely from back to front</li>
+                    <li>Consider the wind direction - often plays downwind</li>
+                    <li>Conservative play to center of green is often wise</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>Bobby Jones had a special relationship with St Andrews, despite walking off the course in frustration 
+                during his first visit in 1921. He would later return to win the 1927 Open Championship here and be 
+                given the Freedom of St Andrews, only the second American to receive this honor.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Kruger bunkers (right)</li>
+                    <li>Bobby Jones bunker (front left)</li>
+                    <li>Steep green-to-front slope</li>
+                    <li>Hidden swale behind green</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hole-card">
+                <h3>Green Reading</h3>
+                <p>The green is shared with the 8th hole and features a pronounced ridge running diagonally across 
+                its surface. The back-to-front slope can be severe, making approach shots from above the hole 
+                particularly challenging. Many subtle breaks affect putts, especially in the front portion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

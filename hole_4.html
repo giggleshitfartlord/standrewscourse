@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 4 - Ginger Beer - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 4 - "Ginger Beer"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole4.webp') }}" alt="Hole 4 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 480 yards</li>
+                    <li>Stroke Index: 7</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>A challenging par 4 that plays directly into the prevailing wind. Named after the ginger beer stand 
+                that once stood near the green, this hole features a series of bunkers known as "Students" that guard 
+                the right side of the fairway.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Take enough club - the hole often plays longer than the yardage</li>
+                    <li>Avoid the "Students" bunkers on the right</li>
+                    <li>Left side of fairway provides the best angle to the green</li>
+                    <li>The green is shared with the 14th hole</li>
+                    <li>Consider laying up if out of position</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The "Students" bunkers got their name because they were supposedly dug by university students 
+                in the early days of the course. The ginger beer stand that gave the hole its name was a popular 
+                refreshment stop for golfers in the late 19th century.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>"Students" bunkers (right side)</li>
+                    <li>Deep greenside bunkers</li>
+                    <li>Shared double green</li>
+                    <li>Out of bounds (far right)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The large double green slopes generally from back to front with a significant ridge running through 
+                its middle. The left portion tends to be more receptive to approach shots, while the right side features 
+                more subtle breaks that can be difficult to read.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

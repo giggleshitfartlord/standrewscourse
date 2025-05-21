@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 9 - End - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 9 - "End"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole9.webp') }}" alt="Hole 9 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 352 yards</li>
+                    <li>Stroke Index: 4</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The final hole of the outward nine presents an interesting strategic challenge. Named "End" as it 
+                was traditionally the conclusion of the outward journey, this hole features the fearsome End Hole bunker 
+                and a shared green with the 9th.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Favor the left side off the tee to open up the green</li>
+                    <li>End Hole bunker must be considered on approach</li>
+                    <li>Green slopes significantly from back to front</li>
+                    <li>Watch for players on the adjacent fairway</li>
+                    <li>Consider running approach shots using the contours</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The 9th hole marked the furthest point from the clubhouse in the original course routing. In the 
+                early days, golfers would often stop here for refreshments before beginning their return journey, 
+                establishing a tradition that continues today at many courses worldwide.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

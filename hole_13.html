@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 13 - Hole O'Cross (In) - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 13 - "Hole O'Cross (In)"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole13.webp') }}" alt="Hole 13 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 465 yards</li>
+                    <li>Stroke Index: 5</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>One of the most demanding holes on the inward nine, the 13th requires both length and accuracy. 
+                Named for its crossing point with the 5th hole, it features the infamous Coffin bunkers and a 
+                challenging approach to a well-protected green.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Strong drive needed - often plays into prevailing wind</li>
+                    <li>Coffin bunkers must be avoided off the tee</li>
+                    <li>Watch for players crossing from 5th hole</li>
+                    <li>Green complex rewards running approach shots</li>
+                    <li>Long iron approach common - take enough club</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The 13th hole has long been considered one of the sternest tests on the Old Course. The Coffin 
+                bunkers, aptly named for their ability to 'bury' a player's chances, have influenced the outcome of 
+                many Open Championships played here.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Coffin bunkers (left)</li>
+                    <li>Lion's Mouth bunker (front of green)</li>
+                    <li>Shared fairway with 5th hole</li>
+                    <li>Pot bunkers around green</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The green is shared with the 5th hole and features significant undulation. A large swale in the 
+                middle affects most putts, and the surface tends to be particularly firm. Front pin positions are 
+                especially challenging due to the Lion's Mouth bunker.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

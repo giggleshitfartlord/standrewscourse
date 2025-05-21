@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 12 - Heathery (In) - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 12 - "Heathery (In)"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole12.webp') }}" alt="Hole 12 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 348 yards</li>
+                    <li>Stroke Index: 9</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>This relatively short par 4 requires strategic thinking rather than power. The Stroke bunker 
+                guards the optimal line to the green, while a series of pot bunkers protect the putting surface. 
+                The hole shares its name with the 6th, referencing the heather that once grew here.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Position off tee more important than distance</li>
+                    <li>Avoid Stroke bunker at all costs</li>
+                    <li>Green is shared with the 6th hole</li>
+                    <li>Consider running approach using right-to-left slope</li>
+                    <li>Watch for players crossing from 6th hole</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Stroke bunker earned its name from the countless strokes it has added to players' scores 
+                over the centuries. Its strategic placement demonstrates the Old Course's emphasis on position 
+                over power, a principle that has influenced golf course design worldwide.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

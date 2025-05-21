@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 16 - Corner of the Dyke - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 16 - "Corner of the Dyke"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole16.webp') }}" alt="Hole 16 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 423 yards</li>
+                    <li>Stroke Index: 6</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The 16th hole marks the beginning of one of golf's most famous closing stretches. Named for 
+                the old stone wall that once marked the course boundary, this hole requires careful positioning 
+                off the tee to set up the approach to a well-guarded green.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Principal's Nose bunkers must be negotiated off tee</li>
+                    <li>Left side of fairway provides best angle to green</li>
+                    <li>Approach plays slightly uphill - take extra club</li>
+                    <li>Green slopes significantly from back to front</li>
+                    <li>Consider wind effect on approach shot</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Principal's Nose bunkers got their name from their resemblance to the nose of a former 
+                St Andrews University principal. These distinctive bunkers have been a key strategic feature of 
+                the hole since the earliest days of championship golf at St Andrews.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Principal's Nose bunkers (fairway)</li>
+                    <li>Deep greenside bunkers</li>
+                    <li>Out of bounds (right)</li>
+                    <li>Severe green slopes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Green Reading</h3>
+                <p>The green features some of the most severe slopes on the course, particularly from back to front. 
+                A ridge running through the middle creates distinct tiers, making two-putting from the wrong level 
+                extremely challenging. The surface is typically firm and fast.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

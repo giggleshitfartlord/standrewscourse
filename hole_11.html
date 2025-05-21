@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 11 - High (In) - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 11 - "High (In)"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole11.webp') }}" alt="Hole 11 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 3</li>
+                    <li>Length: 174 yards</li>
+                    <li>Stroke Index: 17</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>This challenging par 3 plays to an elevated green that's shared with the 7th hole. The Hill bunker 
+                guards the front of the green, while Strath bunker protects the right side, making club selection and 
+                accuracy paramount.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Take enough club to clear the Hill bunker</li>
+                    <li>Left side of green is safest play</li>
+                    <li>Factor in the elevated green when choosing club</li>
+                    <li>Use the slope behind the green as backstop</li>
+                    <li>Consider wind effect on the exposed green</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Strath bunker was named after David Strath, one of the great players of the 1870s who 
+                had a famous rivalry with Young Tom Morris. The bunker has been a key feature of this hole since 
+                the earliest days of the Old Course.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Hill bunker (front)</li>
+                    <li>Strath bunker (right)</li>
+                    <li>Elevated green complex</li>
+                    <li>Severe slopes around green</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hole-card">
+                <h3>Green Reading</h3>
+                <p>The large double green shared with the 7th hole features significant contours throughout. A ridge 
+                running through the middle creates distinct sections, and the surface tends to be very firm. Back-to-front 
+                slope can make putting treacherous in fast conditions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Old Course Caddie - Your Guide to St Andrews{% endblock %}
+
+{% block content %}
+<div class="hero text-center">
+    <h1>Welcome to Old Course Caddie</h1>
+    <p class="lead">Your Complete Guide to the Home of Golf</p>
+</div>
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="historical-fact mb-4">
+            <p>"I fell in love with it the first day I played it. There's just no other golf course that is even remotely close." 
+            - Jack Nicklaus on the Old Course</p>
+        </div>
+
+        <div class="strategy-section">
+            <h2>About the Old Course</h2>
+            <p>The Old Course at St Andrews is considered the oldest and most iconic golf course in the world. 
+            For over 600 years, this hallowed ground has challenged golfers and shaped the very game itself. 
+            Today, it remains a public course, open to all who wish to walk in the footsteps of legends.</p>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="hole-card">
+                    <h3>Course Overview</h3>
+                    <ul>
+                        <li>Par: 72</li>
+                        <li>Length: 6,721 yards</li>
+                        <li>Founded: circa 1400s</li>
+                        <li>Type: Links</li>
+                        <li>Designer: Nature/Time</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="hole-card">
+                    <h3>Quick Navigation</h3>
+                    <ul>
+                        <li><a href="{{ url_for('history') }}">Course History</a></li>
+                        <li><a href="{{ url_for('tips') }}">First-Time Player Tips</a></li>
+                        <li><a href="{{ url_for('resources') }}">Visitor Resources</a></li>
+                        <li><a href="{{ url_for('hole', hole_number=1) }}">Start Course Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="strategy-section mt-4">
+            <h2>Using This Guide</h2>
+            <p>Old Course Caddie provides detailed information for each of the 18 holes, including:</p>
+            <ul>
+                <li>Hole descriptions and strategies</li>
+                <li>Common hazards and how to avoid them</li>
+                <li>Green reading advice</li>
+                <li>Historical facts and memorable moments</li>
+                <li>Tips from experienced players</li>
+            </ul>
+        </div>
+
+        <div class="historical-fact mt-4">
+            <h2>Start Your Journey</h2>
+            <p>Begin your virtual tour of the Old Course by visiting <a href="{{ url_for('hole', hole_number=1) }}">Hole 1</a>, 
+            or explore our comprehensive <a href="{{ url_for('tips') }}">First-Time Player Guide</a> to prepare for your round 
+            at the Home of Golf.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

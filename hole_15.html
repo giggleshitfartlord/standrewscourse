@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 15 - Cartgate (In) - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 15 - "Cartgate (In)"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole15.webp') }}" alt="Hole 15 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 455 yards</li>
+                    <li>Stroke Index: 2</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>A challenging par 4 that plays towards the town, Cartgate In features a narrow driving corridor 
+                and one of the most challenging approach shots on the course. The hole is named after the cart path 
+                that once crossed the fairway here.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Thread tee shot between bunkers left and right</li>
+                    <li>Miss the approach left rather than right</li>
+                    <li>Consider running approach shot onto green</li>
+                    <li>Factor in cross-winds on approach</li>
+                    <li>Green shared with 3rd hole - check pin position</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The name "Cartgate" refers to the ancient path used by carts to transport seaweed from the beach 
+                for use as fertilizer on local farms. This hole has been a pivotal test in many Open Championships, 
+                particularly when playing into the prevailing wind.</p>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Cartgate bunkers (right)</li>
+                    <li>Miss Miss bunker (left)</li>
+                    <li>Pot bunkers near green</li>
+                    <li>Out of bounds (right)</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The double green shared with the 3rd hole features subtle contours throughout. A ridge running 
+                through the middle creates distinct sections, and the surface tends to be very firm. Back-right pin 
+                positions are particularly challenging.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

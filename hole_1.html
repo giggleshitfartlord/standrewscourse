@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 1 - Burn - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 1 - "Burn"</h1>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/Hole1.webp') }}" alt="Hole 1 Map" class="hole-map img-fluid">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 376 yards</li>
+                    <li>Stroke Index: 14</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The opening hole at the Old Course is one of golf's most iconic starting holes. A relatively wide fairway is 
+                bounded by the Swilcan Burn on the right and out of bounds along the first and eighteenth fairways.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Aim slightly left of center from the tee to avoid the Swilcan Burn</li>
+                    <li>The fairway is shared with the 18th hole - be aware of players coming in</li>
+                    <li>A medium iron or hybrid off the tee is often sufficient</li>
+                    <li>The green is protected by deep bunkers - approach with caution</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The Swilcan Burn that crosses the first and 18th holes has been a feature of the course since its earliest 
+                days, originally helping to drain the land that would become the Old Course.</p>
+            </div>            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Swilcan Burn (right side)</li>
+                    <li>Out of bounds (left side)</li>
+                    <li>Greenside bunkers</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The first green is relatively flat by Old Course standards but has subtle breaks that can be difficult 
+                to read. The surface tends to slope slightly from back to front.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

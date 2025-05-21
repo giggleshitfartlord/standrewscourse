@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Hole 2 - High/Dyke - Old Course Caddie{% endblock %}
+
+{% block content %}
+<div class="hole-card">
+    <h1>Hole 2 - "High/Dyke"</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="hole-map-container">
+                <img src="{{ url_for('static', filename='images/hole2.webp') }}" alt="Hole 2 Map" class="hole-map img-fluid">
+            </div>
+        </div>        <div class="col-md-7">
+            <div class="strategy-section">
+                <h3>Hole Overview</h3>
+                <ul>
+                    <li>Par: 4</li>
+                    <li>Length: 453 yards</li>
+                    <li>Stroke Index: 13</li>
+                </ul>
+                
+                <h3>Description</h3>
+                <p>The second hole at the Old Course presents a challenging dogleg right that demands careful strategy. 
+                Named "High" due to its elevated green complex, this hole requires precise placement off the tee and an 
+                accurate approach shot.</p>
+            </div>
+
+            <div class="strategy-section mt-4">
+                <h3>Strategy Tips</h3>
+                <ul>
+                    <li>Favor the left side of the fairway off the tee</li>
+                    <li>Beware of the Cheape bunkers on the right side</li>
+                    <li>The green is elevated and well-protected - take enough club</li>
+                    <li>Consider the wind direction carefully on approach</li>
+                </ul>
+            </div>
+
+            <div class="historical-fact mt-4">
+                <h3>Historical Note</h3>
+                <p>The second hole was originally called "Dyke" due to a stone wall that once ran along the right side 
+                of the fairway. While the wall is long gone, the strategic challenge of the hole remains intact.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="hole-card">
+                <h3>Common Hazards</h3>
+                <ul>
+                    <li>Cheape bunkers (right side)</li>
+                    <li>Deep greenside bunkers</li>
+                    <li>Out of bounds (right)</li>
+                    <li>Elevated green complex</li>
+                </ul>
+            </div>
+
+            <div class="hole-card mt-4">
+                <h3>Green Reading</h3>
+                <p>The second green slopes predominantly from back to front with a subtle tier in the middle section. 
+                The elevated position makes it particularly susceptible to wind effects. Front pin positions can be 
+                especially challenging due to the false front.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

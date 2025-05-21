@@ -1,0 +1,122 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Hero section */
+.hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Thank you page */
+.hero .lead {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    color: #e0e0e0;
+}
+
+.hero p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+/* Hole map styles */
+.hole-map-container {
+    background-color: #202020;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+    max-width: 520px;
+    margin-bottom: 1rem;
+}
+
+.hole-map {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Course hole cards */
+.hole-card {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: #2a2a2a;
+}
+
+.hole-card h3 {
+    color: #89cff0;
+    margin-bottom: 1rem;
+}
+
+/* Strategy sections */
+.strategy-section {
+    background-color: #252525;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid #333;
+}
+
+/* Historical facts */
+.historical-fact {
+    font-style: italic;
+    color: #b0b0b0;
+    padding: 1rem;
+    border-left: 4px solid #4a90e2;
+    margin: 1rem 0;
+    background-color: #222;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Tips and resources */
+.tip-box {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+}
+
+/* Responsive images */
+.course-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Navigation enhancements */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hole-card {
+        padding: 1rem;
+    }
+}
